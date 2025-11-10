@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylechart.css"> <!-- Link ke file CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="layouts">
+    <section class="navbar">
+        <h3>
+            SMART HOME
+            <!-- <div class="header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                            <path d="M12 20c0-7 7-8 7-8V4s-7 1-7 8"></path>
+                            <path d="M12 20c0-7-7-8-7-8V4s7 1 7 8"></path>
+                        </svg>
+                    </div>
+                    <span class="app-name">Smart System</span>
+                </div>
+            </div> -->
+        </h3>
+    </section>
+    <section class="items">
+            <div class="plant-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 64 64">
+                    <path d="M32 55V35" stroke-linecap="round"/>
+                    <path d="M32 35C32 20 54 19 54 19V9S32 10 32 35" stroke-linecap="round"/>
+                    <path d="M32 35C32 20 10 19 10 19V9S32 10 32 35" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="subtitle">MONITORING SUHU</div>
+            <div class="main-data">
+                    <div class="data-block">
+                        <div class="data-value" id="val-suhu">34</div>
+                        <div class="data-label">Suhu (°C)</div>
+                    </div>
+                    <div class="data-block">
+                        <div class="data-value" id="val-rh">64</div>
+                        <div class="data-label">RH (%)</div>
+                    </div>
+            </div>
+            <div class="bars">
+                    <div class="bar-block">
+                        <div class="bar-bg">
+                            <div class="bar-fill" id="bar-suhu" style="height:84%"></div>
+                            <div class="bar-value" id="barval-suhu">34°C</div>
+                        </div>
+                        <div class="bar-label">Suhu</div>
+                    </div>
+                    <div class="bar-block">
+                        <div class="bar-bg">
+                            <div class="bar-fill" id="bar-rh" style="height:64%"></div>
+                            <div class="bar-value" id="barval-rh">64%</div>
+                        </div>
+                        <div class="bar-label">Kelembapan</div>
+                    </div>
+            </div>
+    </section>
+    <section class="bottombar">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+            <li><a href="chart.html"><i class="fa-solid fa-chart-simple" ></i></a></li>
+            <li><a href="kontrol.html"><i class="fa-solid fa-fan"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-wifi"></i></a></li>
+        </ul>
+    </section>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>

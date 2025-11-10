@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="layouts">
+        <section class="navbar">
+            <h3>Project IoT</h3>
+        </section>
+        <section class="page-title">
+            <h3>CONTROL</h3>
+        </section>
+        <section class="leds">
+            <div class="led">
+                <img src="assets/fanoff.png" class="led-image" id="dapurLedImage"/>
+                <p class="led-location-text">RUANG TV</p>
+                <button class="led-submit" id="ledDapur" onclick="setDapurLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/fanoff.png" class="led-image" id="tamuLedImage"/>
+                <p class="led-location-text">RUANG TAMU</p>
+                <button class="led-submit" id="ledTamu" onclick="setTamuLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/fanoff.png" class="led-image" id="makanLedImage"/>
+                <p class="led-location-text">RUANG MAKAN</p>
+                <button class="led-submit" id="ledMakan" onclick="setMakanLed()">TURN ON</button>
+            </div>
+            <div class="led">
+                <img src="assets/fanoff.png" class="led-image" id="toiletLedImage"/>
+                <p class="led-location-text">KAMAR</p>
+                <button class="led-submit" id="ledToilet" onclick="setToiletLed()">TURN ON</button>
+            </div>
+        </section>
+        <section class="bottombar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-home"></i></a></li>
+                <li><a href="chart.html"><i class="fa-solid fa-chart-simple" ></i></a></li>
+                <li><a href="kontrol.html"><i class="fa-solid fa-fan"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-wifi"></i></a></li>
+            </ul>
+        </section>
+    </div>  
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
